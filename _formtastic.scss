@@ -2,18 +2,23 @@
 
 $formtastic_error_color: #cc0000;
 $formtastic_hint_color: #666;
-$label_width: columns(3,12);
-$input_offset: columns(3,12)+gutter(12);
-$input_width: columns(9,12);
 $textarea_rows: 20;
 
+@mixin formtastic($label_columns: 3, $input_columns: 9, $context: $total-cols ) {
+  $form_context: $label_columns + $input_columns;
+  $label_width: columns($label_columns, $form_context);
+  $input_offset: columns($label_columns, $form_context)+gutter($form_context);
+  $input_width: columns($input_columns, $form_context);
 
-form.formtastic {
   @include global-reset;
 
   input { width: auto; }
 
-  @include full;
+  @if $form_context == $context {
+    @include full;
+  } @else {
+    @include columns($form_context, $context);
+  }
 
   // SEMANTIC ERRORS
   //------------------------------------------------------------------------------------------------
@@ -32,6 +37,8 @@ form.formtastic {
   // FIELDSETS & LISTS
   //------------------------------------------------------------------------------------------------
   fieldset {
+    @include clearfix;
+
     &.inputs {}
 
     &.buttons {
@@ -44,8 +51,6 @@ form.formtastic {
     }
 
     ol {}
-
-    @include clearfix;
 
     // INPUT LIs
     //----------------------------------------------------------------------------------------------
@@ -62,7 +67,7 @@ form.formtastic {
       label {
         display:block;
         width: $label_width;
-        margin-right: gutter();
+        margin-right: gutter($form_context);
         float:left;
       }
 
@@ -93,9 +98,9 @@ form.formtastic {
         }
 
         ol {
-          float:left;
+          float: left;
           width: $input_width;
-          margin:0;
+          margin: 0;
           padding:0 0 0 $input_offset;
 
           li { padding:0; border:0; }
@@ -106,15 +111,13 @@ form.formtastic {
       //--------------------------------------------------------------------------------------------
       p.inline-hints {
         color: $formtastic_hint_color;
-        //margin:0.5em 0 0 $label_width;
         margin-left: $input_offset;
       }
 
       // INLINE ERRORS
       //--------------------------------------------------------------------------------------------
       p.inline-errors {
-        color:#cc0000;
-        //margin:0.5em 0 0 $label_width;
+        color: $formtastic_error_color;
         margin-left: $input_offset;
       }
 
@@ -178,4 +181,8 @@ form.formtastic {
       }
     }
   }
+}
+
+form.formtastic {
+  @include formtastic(3,9);
 }
