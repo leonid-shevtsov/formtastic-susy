@@ -1,4 +1,9 @@
-// Design for use with Compass and Susy.
+// Use with Compass and Susy
+//
+//  @import "formtastic";
+//  form.formtastic {
+//    @include formtastic;
+//  }
 
 $formtastic_error_color: #cc0000;
 $formtastic_hint_color: #666;
@@ -181,8 +186,4 @@ $textarea_rows: 20;
       }
     }
   }
-}
-
-form.formtastic {
-  @include formtastic(3,9);
 }
