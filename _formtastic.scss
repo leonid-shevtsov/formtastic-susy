@@ -1,0 +1,182 @@
+// Design for use with Compass and Susy.
+
+$formtastic_error_color: #cc0000;
+$formtastic_hint_color: #666;
+$label_width: columns(3,12);
+$input_offset: columns(3,12)+gutter(12);
+$input_width: columns(9,12);
+$textarea_rows: 20;
+
+
+form.formtastic {
+  @include global-reset;
+
+  input { width: auto; }
+
+  @include full;
+
+  /* SEMANTIC ERRORS
+  --------------------------------------------------------------------------------------------------*/
+  ul.errors {
+    color: $formtastic_error_color;
+    margin:0.5em 0 1.5em $input-offset;
+    list-style:square;
+
+    li {
+      padding:0;
+      border:none;
+      display:list-item;
+    }
+  }
+
+  /* FIELDSETS & LISTS
+  --------------------------------------------------------------------------------------------------*/
+  fieldset {
+    &.inputs {}
+
+    &.buttons {
+      padding-left: $input_offset;
+
+      li {
+        float:left;
+        padding-right:0.5em;
+      }
+    }
+
+    ol {}
+
+    @include clearfix;
+
+    /* INPUT LIs
+    --------------------------------------------------------------------------------------------------*/
+    & > ol > li {
+      @include clearfix;
+      @include trailer;
+
+      &.required {}
+      &.optional {}
+      &.error {}
+
+      /* LABELS
+      --------------------------------------------------------------------------------------------------*/
+      label {
+        display:block;
+        width: $label_width;
+        margin-right: gutter();
+        float:left;
+      }
+
+      & > li label {
+        line-height:100%;
+        padding-top:0;
+
+        input {
+          line-height:100%;
+          vertical-align:middle;
+          margin-top:-0.1em;
+        }
+      }
+
+      /* NESTED FIELDSETS AND LEGENDS (radio, check boxes and date/time inputs use nested fieldsets)
+      --------------------------------------------------------------------------------------------------*/
+      fieldset {
+        position:relative;
+
+        legend {
+          position:absolute;
+          width:95%;
+          padding-top:0.1em;
+          left: 0px;
+
+          span { position:absolute; }
+          &.label label { position:absolute; }
+        }
+
+        ol {
+          float:left;
+          width: $input_width;
+          margin:0;
+          padding:0 0 0 $input_offset;
+
+          li { padding:0; border:0; }
+        }
+      }
+
+      /* INLINE HINTS
+      --------------------------------------------------------------------------------------------------*/
+      p.inline-hints {
+        color: $formtastic_hint_color;
+        //margin:0.5em 0 0 $label_width;
+        margin-left: $input_offset;
+      }
+
+      /* INLINE ERRORS
+      --------------------------------------------------------------------------------------------------*/
+      p.inline-errors {
+        color:#cc0000;
+        //margin:0.5em 0 0 $label_width;
+        margin-left: $input_offset;
+      }
+
+      ul.errors {
+        color: $formtastic_error_color;
+        margin:0.5em 0 0 $input_offset;
+        list-style:square;
+
+        li { padding:0; border:none; display:list-item; }
+      }
+
+      /* STRING, PASSWORD & NUMERIC OVERRIDES
+      --------------------------------------------------------------------------------------------------*/
+      &.string, &.password, &.numeric {
+        input { max-width: $input_width; }
+      }
+
+      /* TEXTAREA OVERRIDES
+      --------------------------------------------------------------------------------------------------*/
+      &.text textarea {
+        width: $input_width;
+        line-height: 24px;
+        height: ($textarea_rows * $base_line_height) - 3;
+        padding: 2px;
+      }
+
+      /* HIDDEN OVERRIDES
+      --------------------------------------------------------------------------------------------------*/
+      &.hidden { display: none }
+
+      /* BOOLEAN OVERRIDES
+      --------------------------------------------------------------------------------------------------*/
+      &.boolean label {
+        padding-left: $input_offset;
+        width:auto;
+
+        input { margin:0 0.5em 0 0.2em; }
+      }
+
+      /* RADIO AND CHECKBOX OVERRIDES
+      --------------------------------------------------------------------------------------------------*/
+      &.radio, &.check_boxes {
+        fieldset ol {
+          //margin-bottom:-0.6em;
+
+          //li { margin:0.1em 0 0.5em 0; }
+          li { margin-bottom: 0 }
+          li label { float:none; width:100%; padding: 0}
+          li label input { margin-right:0.2em; }
+        }
+      }
+
+      /* DATE & TIME OVERRIDES
+      --------------------------------------------------------------------------------------------------*/
+      &.date, &.time, &.datetime {
+        fieldset ol li {
+          float:left; width:auto; margin:0 .3em 0 0;
+          label { display:none; }
+          label input { display:inline; margin:0; padding:0; }
+        }
+      }
+    }
+  }
+
+}

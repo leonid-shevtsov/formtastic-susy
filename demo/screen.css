@@ -1,0 +1,647 @@
+/* Welcome to Susy. Use this file to define screen styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" /> */
+/* Reset --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000314}}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000319}}
+ol, ul {
+  list-style: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000321}}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000323}}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000325}}
+q, blockquote {
+  quotes: "" "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000396}}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000327}}
+a img {
+  border: none;
+}
+
+/* HTML5 Reset --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003107}}
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block;
+}
+
+/* Body --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000313}}
+body {
+  font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
+  color: #4c4c4c;
+}
+
+/* Links --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000321}}
+a:link, a:visited {
+  color: #005498;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000324}}
+a:focus, a:hover, a:active {
+  color: #00467f;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000328}}
+a img {
+  border: none;
+}
+
+/* Headings --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000335}}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000337}}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000342}}
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000347}}
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000352}}
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000357}}
+h4 {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  margin-bottom: 1.333em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000362}}
+h5, h6 {
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+/* Text --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000369}}
+cite, em, dfn {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000373}}
+strong, dfn {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000377}}
+sup, sub {
+  line-height: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000381}}
+abbr, acronym {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000386}}
+address {
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000391}}
+ins {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000395}}
+del {
+  text-decoration: line-through;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\0000399}}
+pre, code, tt {
+  margin: 1.5em;
+  margin-left: -1.5em;
+  padding-left: 1.5em;
+  border-left: 1px dotted;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003108}}
+pre {
+  white-space: pre;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003112}}
+code {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003116}}
+q {
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003118}}
+q em {
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003123}}
+p {
+  margin-bottom: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003127}}
+blockquote, q {
+  quotes: "" "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003131}}
+blockquote {
+  margin: 1.5em;
+  margin-left: -1.5em;
+  padding-left: 1.5em;
+  border-left: 1px solid;
+  font-family: 'Adobe Caslon Pro', Caslon, Baskerville, Palatino, 'Palatino Linotype', "Hoefler Text", Garamond, "URW Palladio L", "Book Antiqua", Georgia, serif;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003142}}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+/* Replaced --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003149}}
+img {
+  vertical-align: bottom;
+}
+
+/* Lists --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003170}}
+ol {
+  margin: 0 1.5em 1.5em 0;
+  list-style: decimal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003174}}
+ul {
+  margin: 0 1.5em 1.5em 0;
+  list-style: disc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003179}}
+li ul, li ol {
+  list-style-type: circle;
+  margin: 0 1.5em 0.75em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003185}}
+dl {
+  margin-bottom: 1.5em;
+  border-top-style: solid;
+  border-top-width: 0.063em;
+  padding-top: 1.438em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003188}}
+dl dt {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  margin-bottom: 0.667em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003194}}
+dd {
+  margin-bottom: 1.5em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.063em;
+  padding-bottom: 1.438em;
+}
+
+/* Tables --------------------------------------------------------------*/
+/* tables still need 'cellspacing="0"' in the markup */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003202}}
+table {
+  margin-bottom: 1.5em;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003209}}
+table, td, th {
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003213}}
+th, thead th {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003217}}
+th, td, caption {
+  padding: 0.75em;
+  text-align: left;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003223}}
+th, td {
+  border-bottom-style: solid;
+  border-bottom-width: 0.063em;
+  padding-bottom: 0.688em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003227}}
+tfoot {
+  font-size: 0.875em;
+  line-height: 1.714em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003231}}
+caption {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+/* Forms --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003238}}
+fieldset {
+  margin-bottom: 1.5em;
+  border-style: solid;
+  border-width: 0.063em;
+  padding: 1.438em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003243}}
+legend {
+  font-size: 1.125em;
+  line-height: 1.333em;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003248}}
+label {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_defaults\.scss}line{font-family:\00003252}}
+textarea, input:not([type="radio"]) {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Layout --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-susy-plugin-0\.7\.0\/sass\/susy\/_vertical_rhythm\.scss}line{font-family:\0000329}}
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-susy-plugin-0\.7\.0\/sass\/susy\/_vertical_rhythm\.scss}line{font-family:\0000333}}
+html > body {
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-susy-plugin-0\.7\.0\/sass\/susy\/_susy\.scss}line{font-family:\0000318}}
+body {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/screen\.scss}line{font-family:\0000314}}
+#page {
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 61em;
+  max-width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_hacks\.scss}line{font-family:\000038}}
+#page {
+  display: block;
+}
+
+/* Styles --------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000311}}
+form.formtastic {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  /* SEMANTIC ERRORS
+  --------------------------------------------------------------------------------------------------*/
+  /* FIELDSETS & LISTS
+  --------------------------------------------------------------------------------------------------*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000314}}
+form.formtastic html, form.formtastic body, form.formtastic div, form.formtastic span, form.formtastic applet, form.formtastic object, form.formtastic iframe,
+form.formtastic h1, form.formtastic h2, form.formtastic h3, form.formtastic h4, form.formtastic h5, form.formtastic h6, form.formtastic p, form.formtastic blockquote, form.formtastic pre,
+form.formtastic a, form.formtastic abbr, form.formtastic acronym, form.formtastic address, form.formtastic big, form.formtastic cite, form.formtastic code,
+form.formtastic del, form.formtastic dfn, form.formtastic em, form.formtastic font, form.formtastic img, form.formtastic ins, form.formtastic kbd, form.formtastic q, form.formtastic s, form.formtastic samp,
+form.formtastic small, form.formtastic strike, form.formtastic strong, form.formtastic sub, form.formtastic sup, form.formtastic tt, form.formtastic var,
+form.formtastic dl, form.formtastic dt, form.formtastic dd, form.formtastic ol, form.formtastic ul, form.formtastic li,
+form.formtastic fieldset, form.formtastic form, form.formtastic label, form.formtastic legend,
+form.formtastic table, form.formtastic caption, form.formtastic tbody, form.formtastic tfoot, form.formtastic thead, form.formtastic tr, form.formtastic th, form.formtastic td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000317}}
+form.formtastic body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000319}}
+form.formtastic ol, form.formtastic ul {
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000321}}
+form.formtastic table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000323}}
+form.formtastic caption, form.formtastic th, form.formtastic td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000325}}
+form.formtastic q, form.formtastic blockquote {
+  quotes: "" "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000396}}
+form.formtastic q:before, form.formtastic q:after, form.formtastic blockquote:before, form.formtastic blockquote:after {
+  content: "";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000327}}
+form.formtastic a img {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000314}}
+form.formtastic input {
+  width: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000320}}
+form.formtastic ul.errors {
+  color: #cc0000;
+  margin: 0.5em 0 1.5em 25.424%;
+  list-style: square;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000325}}
+form.formtastic ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000334}}
+form.formtastic fieldset {
+  overflow: hidden;
+  display: inline-block;
+  /* INPUT LIs
+  --------------------------------------------------------------------------------------------------*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000337}}
+form.formtastic fieldset.buttons {
+  padding-left: 25.424%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000340}}
+form.formtastic fieldset.buttons li {
+  float: left;
+  padding-right: 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_hacks\.scss}line{font-family:\000038}}
+form.formtastic fieldset {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000352}}
+form.formtastic fieldset > ol > li {
+  overflow: hidden;
+  display: inline-block;
+  margin-bottom: 1.5em;
+  /* LABELS
+  --------------------------------------------------------------------------------------------------*/
+  /* NESTED FIELDSETS AND LEGENDS (radio, check boxes and date/time inputs use nested fieldsets)
+  --------------------------------------------------------------------------------------------------*/
+  /* INLINE HINTS
+  --------------------------------------------------------------------------------------------------*/
+  /* INLINE ERRORS
+  --------------------------------------------------------------------------------------------------*/
+  /* STRING, PASSWORD & NUMERIC OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* TEXTAREA OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* HIDDEN OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* BOOLEAN OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* RADIO AND CHECKBOX OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+  /* DATE & TIME OVERRIDES
+  --------------------------------------------------------------------------------------------------*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/usr\/local\/lib\/ruby\/gems\/1\.8\/gems\/compass-0\.10\.2\/frameworks\/compass\/stylesheets\/compass\/utilities\/general\/_hacks\.scss}line{font-family:\000038}}
+form.formtastic fieldset > ol > li {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000362}}
+form.formtastic fieldset > ol > li label {
+  display: block;
+  width: 23.729%;
+  margin-right: 1.639%;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000369}}
+form.formtastic fieldset > ol > li > li label {
+  line-height: 100%;
+  padding-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000373}}
+form.formtastic fieldset > ol > li > li label input {
+  line-height: 100%;
+  vertical-align: middle;
+  margin-top: -0.1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000382}}
+form.formtastic fieldset > ol > li fieldset {
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000385}}
+form.formtastic fieldset > ol > li fieldset legend {
+  position: absolute;
+  width: 95%;
+  padding-top: 0.1em;
+  left: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000391}}
+form.formtastic fieldset > ol > li fieldset legend span {
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000392}}
+form.formtastic fieldset > ol > li fieldset legend.label label {
+  position: absolute;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\0000395}}
+form.formtastic fieldset > ol > li fieldset ol {
+  float: left;
+  width: 74.576%;
+  margin: 0;
+  padding: 0 0 0 25.424%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003101}}
+form.formtastic fieldset > ol > li fieldset ol li {
+  padding: 0;
+  border: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003107}}
+form.formtastic fieldset > ol > li p.inline-hints {
+  color: #666666;
+  margin-left: 25.424%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003115}}
+form.formtastic fieldset > ol > li p.inline-errors {
+  color: #cc0000;
+  margin-left: 25.424%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003121}}
+form.formtastic fieldset > ol > li ul.errors {
+  color: #cc0000;
+  margin: 0.5em 0 0 25.424%;
+  list-style: square;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003126}}
+form.formtastic fieldset > ol > li ul.errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003132}}
+form.formtastic fieldset > ol > li.string input, form.formtastic fieldset > ol > li.password input, form.formtastic fieldset > ol > li.numeric input {
+  max-width: 74.576%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003137}}
+form.formtastic fieldset > ol > li.text textarea {
+  width: 74.576%;
+  line-height: 24px;
+  height: 477px;
+  padding: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003146}}
+form.formtastic fieldset > ol > li.hidden {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003150}}
+form.formtastic fieldset > ol > li.boolean label {
+  padding-left: 25.424%;
+  width: auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003154}}
+form.formtastic fieldset > ol > li.boolean label input {
+  margin: 0 0.5em 0 0.2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003164}}
+form.formtastic fieldset > ol > li.radio fieldset ol li, form.formtastic fieldset > ol > li.check_boxes fieldset ol li {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003165}}
+form.formtastic fieldset > ol > li.radio fieldset ol li label, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label {
+  float: none;
+  width: 100%;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003166}}
+form.formtastic fieldset > ol > li.radio fieldset ol li label input, form.formtastic fieldset > ol > li.check_boxes fieldset ol li label input {
+  margin-right: 0.2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003173}}
+form.formtastic fieldset > ol > li.date fieldset ol li, form.formtastic fieldset > ol > li.time fieldset ol li, form.formtastic fieldset > ol > li.datetime fieldset ol li {
+  float: left;
+  width: auto;
+  margin: 0 .3em 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003175}}
+form.formtastic fieldset > ol > li.date fieldset ol li label, form.formtastic fieldset > ol > li.time fieldset ol li label, form.formtastic fieldset > ol > li.datetime fieldset ol li label {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/_formtastic\.scss}line{font-family:\00003176}}
+form.formtastic fieldset > ol > li.date fieldset ol li label input, form.formtastic fieldset > ol > li.time fieldset ol li label input, form.formtastic fieldset > ol > li.datetime fieldset ol li label input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/leonid\/www\/rails3test\/public\/stylesheets\/sass\/screen\.scss}line{font-family:\0000327}}
+h1 {
+  clear: both;
+  margin-right: 1.639%;
+  margin-left: 1.639%;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
