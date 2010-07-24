@@ -1,6 +1,6 @@
 # Formtastic Susy
 
-I've used Formtastic for quite some time. Now I met Susy. Susy was good, but not quite formtastic, so I teached her a few things myself.
+I've known Formtastic for quite some time. Now I met Susy. Susy was good, but not quite formtastic, so I teached her a few things myself.
 
 ## More prosaic
 
